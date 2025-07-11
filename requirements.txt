@@ -1,0 +1,7 @@
+selenium-wire
+blinker==1.7.0
+webdriver-manager
+beautifulsoup4
+requests
+pandas
+setuptools
