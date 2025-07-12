@@ -129,7 +129,7 @@ async def main():
     rfq_scraper = RFQScraper(url)
     await rfq_scraper.init_browser()
     data = await rfq_scraper.scrape()
-    rfq_scraper.save_to_csv(data,"alibaba_rfq_{}".format(rfq_scraper.get_date("Just now")))
+    rfq_scraper.save_to_csv(data,"alibaba_rfq_{}.csv".format(rfq_scraper.get_date("Just now")))
 
 if __name__ == "__main__":
     asyncio.run(main())
